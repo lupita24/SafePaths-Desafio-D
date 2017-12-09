@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/singin"
-        android:id="@+id/button"
+        android:id="@+id/buttonsingin"
         android:textColor="#FFF"
         android:background="@drawable/selector_xml_btn_login"
         android:layout_gravity="center_horizontal"

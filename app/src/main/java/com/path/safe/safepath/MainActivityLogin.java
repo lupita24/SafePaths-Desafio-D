@@ -22,5 +22,14 @@ public class MainActivityLogin extends AppCompatActivity {
         //REMOVE TITLE AND FULLSCREEN enable
         this.getSupportActionBar().hide();
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        this.InitComponents();
+    }
+
+    private void InitComponents(){
+        //Inicializamos los datos del Layout
+        edt_email = (EditText)findViewById(R.id.email);
+        edt_passw = (EditText)findViewById(R.id.password);
+        btn_singIn = (Button)findViewById(R.id.buttonsingin);
     }
 }
