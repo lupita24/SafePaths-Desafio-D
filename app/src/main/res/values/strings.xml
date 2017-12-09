@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Safe Paths</string>
+
+    <string name="password">Contraseña</string>
+    <string name="email">Correo electrónico</string>
+    <string name="singin">Iniciar Sesión</string>
+    <string name="registrate">¿Aún no estás registrado?</string>
+    <string name="registrate2">¡Regístrate aquí!</string>
+
+    <!-- Anadir zona nueva -->
+    <string name="nivel">Nivel de Inseguridad</string>
+    <string name="radio">Radio</string>
+    <string name="comentarios">Comentarios</string>
+
+    <!-- Destino -->
+    <string name="ruta">Ruta segura</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    android:padding="40dp">
+
+    <ImageView android:src="@drawable/logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:drawableLeft="@mipmap/usuario"
+        android:hint="@string/email"
+        android:layout_marginTop="70dp"
+        android:textColor="#607D8B"
+        android:paddingLeft="0dp"
+        android:drawablePadding="5dp"
+        android:textColorHint="#999"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:drawableLeft="@mipmap/candado"
+        android:hint="@string/password"
+        android:layout_marginTop="10dp"
+        android:textColor="#607D8B"
+        android:paddingLeft="0dp"
+        android:drawablePadding="5dp"
+        android:textColorHint="#999"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/singin"
+        android:id="@+id/button"
+        android:textColor="#FFF"
+        android:background="@drawable/selector_xml_btn_login"
+        android:layout_gravity="center_horizontal"
+        android:onClick="checkLogin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/registrate"
+        android:id="@+id/textRegistrate_aux"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="#607D8B"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/registrate2"
+        android:id="@+id/textRegistrate"
+        android:layout_gravity="center"
+        android:textColor="#ff472f"
+        />
+
+</LinearLayout>
