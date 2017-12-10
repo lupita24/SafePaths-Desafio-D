@@ -2,10 +2,6 @@ package com.path.safe.safepath;
 
 import android.app.FragmentManager;
 import android.app.Fragment;
-<<<<<<< HEAD
-=======
-
->>>>>>> e9e65a57bc4106b21db37942f802b6dcf380065e
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
