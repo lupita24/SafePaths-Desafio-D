@@ -34,4 +34,13 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <!--Navigation Drawer-->
+    <string name="prompt_account">Mi cuenta</string>
+    <string name="prompt_paths">Mis rutas</string>
+    <string name="prompt_qualification">Mis calificaciones</string>
+    <string name="prompt_option">Opciones </string>
+    <string name="prompt_setting">Configuración</string>
+    <string name="prompt_help">Ayuda</string>
+    <string name="prompt_info">Acerca de Safe Paths</string>
+    <string name="title_activity_general_map">Map</string>
 </resources>
