@@ -53,4 +53,14 @@
     <string name="prompt_help">Ayuda</string>
     <string name="prompt_info">Acerca de Safe Paths</string>
     <string name="title_activity_general_map">Map</string>
+    <string name="title_activity_paths">Map</string>
+    <string name="title_activity_add_zone">Map</string>
+    <!--addZone-->
+    <string name="color_bajo">#FFF9C4</string>
+    <string name="color_medio">#FFE0B2</string>
+    <string name="color_alto">#FFCDD2</string>
+
+    <string name="color_bajo_sel">#FFC107</string>
+    <string name="color_medio_sel">#E65100</string>
+    <string name="color_alto_sel">#F44336</string>
 </resources>

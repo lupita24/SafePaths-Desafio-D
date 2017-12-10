@@ -43,7 +43,13 @@
 
         <activity
             android:name=".GeneralMapActivity"
-            android:label="@string/title_activity_general_map"></activity>
+            android:label="@string/title_activity_general_map" />
+        <activity
+            android:name=".PathsActivity"
+            android:label="@string/title_activity_paths" />
+        <activity
+            android:name=".AddZoneActivity"
+            android:label="@string/title_activity_add_zone"></activity>
     </application>
 
 </manifest>
