@@ -64,4 +64,13 @@
     <string name="color_medio_sel">#E65100</string>
     <string name="color_alto_sel">#F44336</string>
     <string name="title_activity_add_zona">Map</string>
+    <string name="add_zona">Zona a añadir</string>
+
+    <!--Inicio-->
+    <string name="cargar_zona">Cargando zonas</string>
+    <string name="fallo_cargar">Error al cargar zonas</string>
+    <string name="carga_exitosa">Carga exitosa</string>
+
+
+
 </resources>

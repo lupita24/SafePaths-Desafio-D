@@ -113,18 +113,18 @@ public class AddZona extends FragmentActivity implements OnMapReadyCallback {
 
         my_marker = mMap.addMarker(new MarkerOptions()
                 .position(locationDefault)
-                .title("Zona ha añadir")
-                //.icon(BitmapDescriptorFactory.fromAsset("icons/inicio.png"))
+                .title(getText(R.string.add_zona).toString())
+                //.icon(BitmapDescriptorFactory.fromAsset("iconos/marcador_inicial.png"))
                 .draggable(true));
         my_marker.showInfoWindow();
-
+        my_marker.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.marcador_inicial));
         my_zone = mMap.addCircle(new CircleOptions()
                 .center(locationDefault)
                 .radius(10)
                 .strokeColor(Color.parseColor("#9CCC65"))
                 .fillColor(Color.parseColor("#33691E")));
 
-        int zoom_ = 13;
+        int zoom_ = 15;
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(locationDefault, zoom_));
         // Zoom out to zoom level 13, animating with a duration of 2 seconds.
         mMap.animateCamera(CameraUpdateFactory.zoomTo(zoom_ + 3), 2000, null);

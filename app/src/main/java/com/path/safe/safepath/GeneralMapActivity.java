@@ -178,7 +178,7 @@ public class GeneralMapActivity extends Fragment implements OnMapReadyCallback {
             public void onStart() {
                 super.onStart();
                 pDialog = new ProgressDialog(getActivity());
-                pDialog.setMessage("Descargando data ...");
+                pDialog.setMessage(getText(R.string.cargar_zona));
                 pDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                 pDialog.show();
             }
@@ -188,7 +188,7 @@ public class GeneralMapActivity extends Fragment implements OnMapReadyCallback {
                                   Throwable arg3) {
                 // TODO Auto-generated method stub
                 pDialog.dismiss();
-                Toast.makeText(getActivity(), "Error al descargar zonas!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), getText(R.string.fallo_cargar), Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -221,7 +221,7 @@ public class GeneralMapActivity extends Fragment implements OnMapReadyCallback {
 
                 }
                 drawZonas();
-                Toast.makeText(getActivity(), "Zonas Cargadas...!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), getText(R.string.carga_exitosa), Toast.LENGTH_LONG).show();
                 //notificZonaP();
             }
         };

@@ -128,7 +128,8 @@ public class NavigationDrawerActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_update) {
+            funMiMapa();
             return true;
         }
 
@@ -144,9 +145,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
         if (id == R.id.nav_account) {
             // Handle the camera action
         }/* else if (id == R.id.nav_paths) {
-
         } else if (id == R.id.nav_qualification) {
-
         } */else if (id == R.id.nav_setting) {
 
         } else if (id == R.id.nav_help) {

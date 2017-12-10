@@ -20,28 +20,34 @@ android:layout_width="match_parent" android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_alignParentEnd="true"
-        android:layout_weight="85"/>
+        android:layout_weight="70"/>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="10dp"
         android:layout_weight="5"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="10dp"
         android:weightSum="5">
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="1dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1.19"
+            android:layout_weight="1.80"
+            android:paddingRight="5dp"
             android:layout_gravity="center_vertical|center_horizontal"
-            android:textSize="14dp"
+            android:textSize="18dp"
             android:text="Inseguridad:"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="2dp"
             android:text="Baja"
-            android:textColor="#FFC107"
-            android:background="#FFF9C4"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/selector_xml_btn_baja"
             android:id="@+id/btn_cal_bajo"
             android:nestedScrollingEnabled="false" />
         <Button
@@ -49,58 +55,80 @@ android:layout_width="match_parent" android:layout_height="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Media"
-            android:textColor="#E65100"
-            android:background="#FFE0B2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/selector_xml_btn_medio"
             android:id="@+id/btn_cal_medio"/>
         <Button
             android:layout_width="0dp"
             android:text="Alta"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textColor="#F44336"
-            android:background="#FFCDD2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/selector_xml_btn_alto"
             android:id="@+id/btn_cal_alto"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5"
-        android:orientation="horizontal"
-        android:weightSum="7">
+        android:layout_height="20dp"
+        android:layout_weight="15"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:weightSum="5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:weightSum="1.2"> >
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1.30"
+            android:layout_weight="0.30"
             android:layout_gravity="center_vertical"
-            android:textSize="12dp"
+            android:textSize="18dp"
             android:text="Radio:"/>
         <SeekBar
             android:id="@+id/seekBar_radio"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="5.02"
-            android:layout_alignParentLeft="true"
+            android:layout_weight="0.90"
+            android:layout_marginLeft="45dp"
             android:layout_gravity="center_vertical"
-            android:max="100" >
+            android:max="50" >
         </SeekBar>
+        </LinearLayout>
+
         <TextView
+            android:id="@+id/pop_addDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:textSize="14dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="5"
+            android:text="Añadir descripción"
             android:textColor="#01579B"
-            android:id="@+id/pop_addDescription"
-            android:text="Añadir descripción?"/>
+            android:textSize="18dp" />
     </LinearLayout>
+
     <Button
+        android:id="@+id/btn_confirmarAddZona"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5"
-        android:background="#E53935"
-        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="7"
+        android:background="@drawable/selector_xml_btn_login"
         android:text="CONFIRMAR"
-        android:id="@+id/btn_confirmarAddZona"
-        android:layout_gravity="center_horizontal"/>
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
 
 </LinearLayout>
 

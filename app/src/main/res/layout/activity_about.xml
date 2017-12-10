@@ -6,27 +6,34 @@
     android:layout_height="match_parent"
     tools:context="com.path.safe.safepath.AboutActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="174dp"
-        android:layout_height="200dp"
-        android:src="@drawable/logo_pequeno"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="59dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="100"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="174dp"
+            android:layout_height="200dp"
+            android:layout_weight="100"
+            android:src="@drawable/logo_pequeno"
+            />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="70dp"
-        android:layout_height="19dp"
-        android:text="Versión 1.2"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="273dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="70dp"
+            android:layout_height="19dp"
+            android:text="Versión 1.2"
+            android:layout_weight="20" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="185dp"
-        android:layout_height="29dp"
-        android:text="Copyright 2017 HAL Group."
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="299dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="185dp"
+            android:layout_height="29dp"
+            android:layout_weight="20"
+            android:text="Copyright 2017 HAL Group."
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="299dp" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
