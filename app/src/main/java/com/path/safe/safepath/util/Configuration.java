@@ -39,7 +39,6 @@ public class Configuration {
         HEIGHT_PIXEL=value;
     }
 
-<<<<<<< HEAD
     public Bitmap escalarImagen(String path, int w, int h){
         AssetManager assetManager = context.getAssets();
         Bitmap bitmap = Bitmap.createBitmap(w,h,Bitmap.Config.ARGB_8888);
@@ -53,7 +52,6 @@ public class Configuration {
         }
         return  bitmap;
     }
-=======
     //Base de Datos URL
     public static String URL_BASE = "https://safepath-empresagaj.c9users.io";
     public static String LINK_BD_ZONA = "/api/zona";
@@ -66,6 +64,5 @@ public class Configuration {
     public static String MY_PREFS_NAME = "miCuenta";
     //DISTANCIA RADIO TIERRA
     public static double RADIO_TIERRA = 6372.795477;
->>>>>>> origin/master
 }
 
