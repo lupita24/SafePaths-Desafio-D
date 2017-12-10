@@ -61,9 +61,6 @@ public class Configuration {
     public static String LINK_BD_USUARIO = "/api/usuario";
     public static String LINK_BD_REGISTRO =  "/api/registro/";
 
-    //addZone
-    public static List<String> list_colores = Arrays.asList("#FFE57F","#FFE57F", "#FFD180","#FFD180", "#EF9A9A");
-    public static List<String> list_colores_center = Arrays.asList("#FFEC00","#FFEC00", "#FF920C","#FF920C", "#FF1D19");
 
     //IDs Claves
     public static String ID_SP = "sp";//safePath
