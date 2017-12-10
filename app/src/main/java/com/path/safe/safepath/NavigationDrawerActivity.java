@@ -2,11 +2,9 @@ package com.path.safe.safepath;
 
 import android.app.FragmentManager;
 import android.app.Fragment;
-<<<<<<< HEAD
+
 import android.content.Intent;
-=======
 import android.content.SharedPreferences;
->>>>>>> origin/master
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -132,16 +130,17 @@ public class NavigationDrawerActivity extends AppCompatActivity
 
         if (id == R.id.nav_account) {
             // Handle the camera action
-        } else if (id == R.id.nav_paths) {
+        }/* else if (id == R.id.nav_paths) {
 
         } else if (id == R.id.nav_qualification) {
 
-        } else if (id == R.id.nav_setting) {
+        } */else if (id == R.id.nav_setting) {
 
         } else if (id == R.id.nav_help) {
 
         }else if (id == R.id.nav_info) {
-
+            Intent i = new Intent(NavigationDrawerActivity.this, AboutActivity.class );
+            startActivity(i);
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

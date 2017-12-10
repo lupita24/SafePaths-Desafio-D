@@ -49,7 +49,8 @@
             android:label="@string/title_activity_paths" />
         <activity
             android:name=".AddZoneActivity"
-            android:label="@string/title_activity_add_zone"></activity>
+            android:label="@string/title_activity_add_zone" />
+        <activity android:name=".AboutActivity"></activity>
     </application>
 
 </manifest>
