@@ -97,7 +97,7 @@ public class GeneralMapActivity extends Fragment implements OnMapReadyCallback {
         load_zones();
 
         verificarGPS();
-        Configuration.miPosicion  = mMap.addMarker(new MarkerOptions().position(locationDefault).title("Tu estas aqui!").icon(BitmapDescriptorFactory.fromAsset("iconos/inicio.png")));
+        Configuration.miPosicion  = mMap.addMarker(new MarkerOptions().position(locationDefault).title("Estás aquí").icon(BitmapDescriptorFactory.fromAsset("iconos/inicio.png")));
 
         Configuration.miPosicion.showInfoWindow();
 

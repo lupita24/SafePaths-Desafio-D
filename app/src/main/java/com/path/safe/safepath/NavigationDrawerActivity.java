@@ -149,7 +149,8 @@ public class NavigationDrawerActivity extends AppCompatActivity
         } */else if (id == R.id.nav_setting) {
 
         } else if (id == R.id.nav_help) {
-
+            Intent i = new Intent(NavigationDrawerActivity.this, condicionesActivity.class );
+            startActivity(i);
         }else if (id == R.id.nav_info) {
             Intent i = new Intent(NavigationDrawerActivity.this, AboutActivity.class );
             startActivity(i);

@@ -50,7 +50,8 @@
         <activity
             android:name=".AddZona"
             android:label="@string/title_activity_add_zone" />
-        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".condicionesActivity"></activity>
     </application>
 
 </manifest>

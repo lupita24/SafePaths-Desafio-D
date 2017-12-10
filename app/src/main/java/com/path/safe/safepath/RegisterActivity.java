@@ -144,7 +144,7 @@ public class RegisterActivity extends AppCompatActivity {
             focusView.requestFocus();
         } else {
             // All is correct
-            //Toast.makeText(RegisterActivity.this, "ENTRO..........", Toast.LENGTH_SHORT).show();
+            Toast.makeText(RegisterActivity.this, "Al registrarte aceptas los términos y condiciones de la aplicación.", Toast.LENGTH_SHORT).show();
             this.funRegistrarse();
         }
     }
@@ -226,7 +226,7 @@ public class RegisterActivity extends AppCompatActivity {
                 }
                 emailExist = verificarUsuario();
                 if(emailExist){
-                    Toast.makeText(RegisterActivity.this,getText(R.string.email_already_exist).toString(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(RegisterActivity.this,getText(R.string.email_already_exist).toString(), Toast.LENGTH_SHORT).show();
                 }else{//Registrar usuario
                     Toast.makeText(RegisterActivity.this, getText(R.string.data_correct).toString(), Toast.LENGTH_SHORT).show();
                     RequestParams params = new RequestParams();
@@ -279,7 +279,16 @@ public class RegisterActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.my_fade_in, R.anim.my_fade_out);
                 finish();
             }
+
+
         };
+    }
+
+    public void MostrarCondiciones(View v)
+    {
+        Intent intent = new Intent(RegisterActivity.this,condicionesActivity.class);
+        startActivity(intent);
+
     }
 }
 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.path.safe.safepath.condicionesActivity">
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/condiciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="5"
+            android:text="Safe Paths y sus componentes se ofrecen únicamente con fines informativos; esta página no es responsable de la exactitud, utilidad o disponibilidad de cualquier información que se transmita o ponga a disposición a través de la misma; no será responsable por cualquier error u omisión en dicha información.
+Cargos: El usuario es responsable de los costes o gastos en los que se incurra como consecuencia de la descarga y uso de cualquiera de las funciones de Safe Paths, incluido cualquier cargo de red de operador o itinerancia. Por lo tanto, se recomienda consultar con el proveedor de servicios los detalles al respecto.
+Idioma: Es posible que algunos contenidos no se encuentren disponibles en todos los idiomas. Póngase en contacto con los desarrolladores para más información.
+Ingeniería inversa:
+El usuario se compromete a no desensamblar, descompilar, aplicar ingeniería inversa o intentar en modo alguno obtener acceso al código fuente de Safe Paths.
+El usuario se compromete a No copiar ninguna parte de la Aplicación de Safe Paths ni se hará uso comercial, alquiler, préstamo, obtener lucro, publicar, otorgar en licencia o sublicencia, distribuir, asignar, ni transferir de alguna forma ninguna parte de la Aplicación de Safe Paths a un tercero no autorizado, pues estos son de derecho exclusivo de los desarrolladores de Safe Paths.
+Safe Paths se reserva el derecho a realizar un seguimiento e informar, de forma anónima, a nuestros proveedores, gobierno y organizaciones afines de servicios estadísticos de terceros, de su actividad en la Aplicación de Safe Paths.
+El usuario reconoce que los derechos, la propiedad y los intereses en relación con la Aplicación de Safe Paths y el software relacionado. “Safe Paths” marca comercial, son de propiedad exclusiva de los desarrolladores.
+El usuario se compromete a no alterar, destruir, ocultar ni suprimir en forma alguna ningún aviso de derechos de autor o de propiedad contenido en la Aplicación Safe Paths.
+Hasta el máximo que permiten los derechos legales del cliente (conforme sean aplicables), estos Términos y Condiciones de uso se rigen por las leyes de Perú, excluidos sus conflictos con las disposiciones legales. El usuario otorga su consentimiento a la jurisdicción peruana frente a cualquier incidente.
+La empresa se reserva el derecho de modificar estas condiciones de periódicamente según lo considere oportuno; así mismo, el uso permanente de la página significará su aceptación de cualquier ajuste a tales términos. Si hay algún cambio en nuestra política de privacidad, anunciaremos en nuestra página principal y en otras páginas importantes de nuestro sitio de forma oportuna sobre tales modificaciones. Si hay algún cambio en nuestra página respecto a la manera en que usamos la información de identificación personal de nuestros clientes, enviaremos una notificación por correo electrónico a aquellos que sean afectados por el cambio. Por lo tanto, se le recomienda a leer esta declaración de manera regular.
+"
+            android:textColor="#01579B"
+            android:textSize="18dp" />
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
