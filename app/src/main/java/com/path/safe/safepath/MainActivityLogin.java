@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -41,6 +42,8 @@ public class MainActivityLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_login);
+
+        verificarSiYaIniciasteSesion();
 
         //REMOVE TITLE AND FULLSCREEN enable
         this.getSupportActionBar().hide();
@@ -126,11 +129,27 @@ public class MainActivityLogin extends AppCompatActivity {
         }
     }
 
+    //Verificamos si el usuario ya habia iniciado sesion anteriormente, si ese fuera el caso lo redireccionamos al activity MavigatorMapas
+    public void verificarSiYaIniciasteSesion()
+    {
+        //Shared Preferences
+        SharedPreferences miCuentaCrear = getSharedPreferences(Configuration.MY_PREFS_NAME,MainActivityLogin.this.MODE_PRIVATE);
+        String restoredText = miCuentaCrear.getString("nombre", null);
+        //Si se inicio session abre el nuevo activity
+        if (restoredText!=null) {
+
+            Ir_a_mapaGeneral();
+        }
+    }
+
     //Ir a MapaGeneral una vez iniciado sesion
     public  void Ir_a_mapaGeneral()
     {
         //Te manda al NavigationDrawerActivity
         Intent intent = new Intent(this,NavigationDrawerActivity.class);
+
+        //PEDIR PERMISO GPS
+
         startActivity(intent);
         overridePendingTransition(R.anim.my_fade_in,R.anim.my_fade_out);
         finish();
