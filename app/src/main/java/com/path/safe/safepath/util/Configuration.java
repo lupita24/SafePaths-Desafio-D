@@ -41,12 +41,6 @@ public class Configuration {
         HEIGHT_PIXEL=value;
     }
 
-
-    //AddZona.java
-    public static List<String> list_colores = Arrays.asList("#FFE57F","#FFE57F", "#FFD180","#FFD180", "#EF9A9A");
-    public static List<String> list_colores_center = Arrays.asList("#FFEC00","#FFEC00", "#FF920C","#FF920C", "#FF1D19");
-
-
     public Bitmap escalarImagen(String path, int w, int h){
         AssetManager assetManager = context.getAssets();
         Bitmap bitmap = Bitmap.createBitmap(w,h,Bitmap.Config.ARGB_8888);
@@ -73,6 +67,7 @@ public class Configuration {
 
     //IDs Claves
     public static String ID_SP = "sp";//safePath
+    public static String ID_FB = "fb";//Facebook
     //SharedPreferences
     public static String MY_PREFS_NAME = "miCuenta";
     //DISTANCIA RADIO TIERRA

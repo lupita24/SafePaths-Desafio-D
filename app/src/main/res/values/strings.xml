@@ -63,4 +63,5 @@
     <string name="color_bajo_sel">#FFC107</string>
     <string name="color_medio_sel">#E65100</string>
     <string name="color_alto_sel">#F44336</string>
+    <string name="title_activity_add_zona">Map</string>
 </resources>

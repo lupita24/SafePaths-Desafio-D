@@ -2,13 +2,9 @@ package com.path.safe.safepath;
 
 import android.app.FragmentManager;
 import android.app.Fragment;
-<<<<<<< HEAD
 import android.content.Intent;
-=======
 import android.content.SharedPreferences;
->>>>>>> origin/master
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,6 +19,7 @@ import android.view.MenuItem;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.path.safe.safepath.util.Configuration;
 
 public class NavigationDrawerActivity extends AppCompatActivity
@@ -42,8 +39,16 @@ public class NavigationDrawerActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton fabAddZona = (FloatingActionButton) findViewById(R.id.fab_addzona);
+        fabAddZona.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(NavigationDrawerActivity.this, AddZona.class );
+                startActivity(i);
+            }
+        });
+        FloatingActionButton fabRuta = (FloatingActionButton) findViewById(R.id.fab_ruta);
+        fabRuta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(NavigationDrawerActivity.this, PathsActivity.class );

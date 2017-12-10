@@ -48,8 +48,8 @@
             android:name=".PathsActivity"
             android:label="@string/title_activity_paths" />
         <activity
-            android:name=".AddZoneActivity"
-            android:label="@string/title_activity_add_zone"></activity>
+            android:name=".AddZona"
+            android:label="@string/title_activity_add_zona"></activity>
     </application>
 
 </manifest>
