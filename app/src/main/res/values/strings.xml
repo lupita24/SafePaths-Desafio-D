@@ -14,4 +14,18 @@
 
     <!-- Destino -->
     <string name="ruta">Ruta segura</string>
+
+    <!--Registro-->
+    <string name="prompt_name">Nombres</string>
+    <string name="prompt_surname">Apellidos</string>
+    <string name="prompt_email">Correo electrónico</string>
+    <string name="prompt_password">Contraseña </string>
+    <string name="action_sign_in">Regístrate</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">Correo electrónico inválido </string>
+    <string name="error_invalid_password">Contraseña muyr corta</string>
+    <string name="error_incorrect_password">Esta contraseña es incorrect</string>
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."</string>
 </resources>
