@@ -9,6 +9,8 @@ import com.google.android.gms.maps.model.Marker;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by Citec-PC on 09/12/17.
@@ -39,7 +41,10 @@ public class Configuration {
         HEIGHT_PIXEL=value;
     }
 
-<<<<<<< HEAD
+    //AddZona.java
+    public static List<String> list_colores = Arrays.asList("#FFE57F","#FFE57F", "#FFD180","#FFD180", "#EF9A9A");
+    public static List<String> list_colores_center = Arrays.asList("#FFEC00","#FFEC00", "#FF920C","#FF920C", "#FF1D19");
+
     public Bitmap escalarImagen(String path, int w, int h){
         AssetManager assetManager = context.getAssets();
         Bitmap bitmap = Bitmap.createBitmap(w,h,Bitmap.Config.ARGB_8888);
@@ -53,7 +58,7 @@ public class Configuration {
         }
         return  bitmap;
     }
-=======
+
     //Base de Datos URL
     public static String URL_BASE = "https://safepath-empresagaj.c9users.io";
     public static String LINK_BD_ZONA = "/api/zona";
@@ -66,6 +71,6 @@ public class Configuration {
     public static String MY_PREFS_NAME = "miCuenta";
     //DISTANCIA RADIO TIERRA
     public static double RADIO_TIERRA = 6372.795477;
->>>>>>> origin/master
+
 }
 

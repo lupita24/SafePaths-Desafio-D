@@ -2,6 +2,7 @@ package com.path.safe.safepath;
 
 import android.app.FragmentManager;
 import android.app.Fragment;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,12 +17,19 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.path.safe.safepath.util.Configuration;
 
 public class NavigationDrawerActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private LayoutInflater inflater;
     private RelativeLayout contenedor;
+
+    private View header;
+    private TextView nickname;
+    private TextView email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +59,33 @@ public class NavigationDrawerActivity extends AppCompatActivity
 
         contenedor = (RelativeLayout)findViewById(R.id.contend_layout);
         inflater = LayoutInflater.from(this);
+
+        header = navigationView.getHeaderView(0);
+        nickname = (TextView) header.findViewById(R.id.nicknameView);
+        email = (TextView) header.findViewById(R.id.text_email);
+
+        setMyProfile();
         funMiMapa();
+    }
+
+    //Seteamos elnickname e imgProfile por uno por defecto, lo que nosotros queramos
+    public void myDefaultProlife()
+    {
+        SharedPreferences miCuenta = getSharedPreferences(Configuration.MY_PREFS_NAME,this.MODE_PRIVATE);
+        String name = miCuenta.getString("nombre", "no found");
+        String email_ = "Bienvenido a SafePaths!!";//miCuenta.getString("clave","no found");
+        nickname.setText(name);
+        email.setText(email_);
+    }
+
+    public void setMyProfile()
+    {
+        try{
+            myDefaultProlife();
+        }catch (Exception e)
+        {
+            //error al cargar miprofile
+        }
     }
 
     @Override
