@@ -1,11 +1,16 @@
 <resources>
     <string name="app_name">Safe Paths</string>
 
+    <!-- Login -->
     <string name="password">Contraseña</string>
     <string name="email">Correo electrónico</string>
     <string name="singin">Iniciar Sesión</string>
     <string name="registrate">¿Aún no estás registrado?</string>
     <string name="registrate2">¡Regístrate aquí!</string>
+    <string name="registrateGratis">Registrate gratis!</string>
+    <string name="please_register">Registrese por favor!!</string>
+    <string name="error_autenticate">Error de Autenticación!</string>
+    <string name="autenticate">Autenticando ....</string>
 
     <!-- Anadir zona nueva -->
     <string name="nivel">Nivel de Inseguridad</string>
@@ -27,8 +32,13 @@
     <string name="error_incorrect_password">Esta contraseña es incorrect</string>
     <string name="error_field_required">Este campo es requerido</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."</string>
+        completions..."</string>
     <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+    <string name="error_register">Error al Registrar!</string>
+    <string name="email_already_exist">Este correo ya existe!</string>
+    <string name="data_correct">Datos ingresados correctamente</string>
+    <string name="load_register">Registrandose ...</string>
+    <string name="succes_register">Se registro correctamente!</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
