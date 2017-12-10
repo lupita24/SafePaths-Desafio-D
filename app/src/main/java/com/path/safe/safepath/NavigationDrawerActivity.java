@@ -4,7 +4,9 @@ import android.app.FragmentManager;
 import android.app.Fragment;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,12 +34,16 @@ public class NavigationDrawerActivity extends AppCompatActivity
     private TextView nickname;
     private TextView email;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //FloatingActionButton fabMenu = (FloatingActionButton) findViewById(R.id.menu_fab);
+        //fabMenu.setImageDrawable(getDrawable(R.drawable.flechas));
 
         FloatingActionButton fabAddZona = (FloatingActionButton) findViewById(R.id.fab_addzona);
         fabAddZona.setOnClickListener(new View.OnClickListener() {
