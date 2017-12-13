@@ -22,7 +22,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.getbase.floatingactionbutton.FloatingActionButton;
+import com.karan.churi.PermissionManager.PermissionManager;
 import com.path.safe.safepath.util.Configuration;
+
+import java.util.ArrayList;
 
 public class NavigationDrawerActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -33,6 +36,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
     private View header;
     private TextView nickname;
     private TextView email;
+
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -72,6 +76,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
+
         contenedor = (RelativeLayout)findViewById(R.id.contend_layout);
         inflater = LayoutInflater.from(this);
 
@@ -82,6 +87,8 @@ public class NavigationDrawerActivity extends AppCompatActivity
         setMyProfile();
         funMiMapa();
     }
+
+
 
     //Seteamos elnickname e imgProfile por uno por defecto, lo que nosotros queramos
     public void myDefaultProlife()

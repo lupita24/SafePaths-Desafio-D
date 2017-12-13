@@ -36,4 +36,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.3.1'
 
     compile 'com.getbase:floatingactionbutton:1.10.1'
+
+    compile "com.github.karanchuri:PermissionManager:0.1.0"
 }

@@ -20,6 +20,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.karan.churi.PermissionManager.PermissionManager;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.path.safe.safepath.util.Configuration;
@@ -38,6 +39,8 @@ public class MainActivityLogin extends AppCompatActivity {
     private TextView text_registrar;
     public List<Usuario> list_usuarios;
 
+    PermissionManager permissionManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,8 +52,21 @@ public class MainActivityLogin extends AppCompatActivity {
         this.getSupportActionBar().hide();
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+        //DAR PERMISOS
+        permissionManager = new PermissionManager() {};
+        permissionManager.checkAndRequestPermissions(this);
+
         this.InitComponents();
         this.ActionsComponents();
+    }
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,String permissions[], int[] grantResults) {
+        permissionManager.checkResult(requestCode,permissions, grantResults);
+        //To get Granted Permission and Denied Permission
+        ArrayList<String> granted=permissionManager.getStatus().get(0).granted;
+        ArrayList<String> denied=permissionManager.getStatus().get(0).denied;
     }
 
     private void InitComponents(){

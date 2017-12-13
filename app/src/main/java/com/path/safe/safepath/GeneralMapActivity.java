@@ -61,6 +61,7 @@ public class GeneralMapActivity extends Fragment implements OnMapReadyCallback {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstancestate)
     {
+        gps = new GPSclass(getActivity());
         return  inflater.inflate(R.layout.activity_general_map,container,false);
     }
 
@@ -75,7 +76,7 @@ public class GeneralMapActivity extends Fragment implements OnMapReadyCallback {
         list_zonas = new ArrayList<Zona>();
         locationDefault = new LatLng(-16.411141,-71.540515);
 
-        gps = new GPSclass(getActivity());
+
 
     }
 
